@@ -1,14 +1,22 @@
 # Superstore Performance Analytics
 
-Retail performance analysis dashboard focused on sales, profit, category, product, market, and regional insights.
+Which category, product, market, and profit patterns should retail stakeholders inspect first from a Superstore dashboard?
 
 ## Business question
 
-What decision can this analysis or workflow support, and what evidence should a reviewer inspect first?
+Which category, product, market, and profit patterns should retail stakeholders inspect first from a Superstore dashboard?
+
+## Reviewer guide
+
+1. `dashboard/Superstore Report.pbit` — Power BI template artifact.
+2. `reports/figures/Overview.png` — executive overview screenshot.
+3. `reports/figures/MarketAnalysis.png` — market analysis screenshot.
+4. `reports/figures/ProductAnalysis.png` — product analysis screenshot.
+5. `docs/evaluation.md` and `reports/results.md` — verification notes.
 
 ## Data source
 
-Superstore BI report artifacts and screenshots from original repo.
+Superstore sample/reporting artifacts. No private business data is tracked.
 
 ## Repository structure
 
@@ -41,17 +49,23 @@ python -m pip install -r requirements.txt
 
 ## Run / verify
 
-1. `python scripts/verify.py`
+```bash
+python3 scripts/verify.py
+```
 
 ## Public outputs
 
-- Dashboard or BI artifact: `dashboard/`
+- Dashboard or public artifact: `Power BI template and exported dashboard screenshots.`
 - Findings and evidence notes: `reports/`
 - Evaluation notes: `docs/`
 - Supporting references: `references/`
+
+## Claim boundary
+
+This repo demonstrates retail BI structure and dashboard evidence from sample artifacts. It does not claim production deployment, live data connection, or measured business impact.
 
 ## Data and security policy
 
 - Credentials, environment files, local raw data, generated working data, databases, archives, and scratch outputs are ignored by `.gitignore`.
 - Public repo keeps only shareable code, sample-safe artifacts, documentation, dashboard files, and evidence summaries.
-- Claims should stay bounded by available data and documented assumptions.
+- Claims stay bounded by available data and documented assumptions.
